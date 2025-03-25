@@ -130,8 +130,7 @@ def main():
     if not bottlenecks.empty:
         print("\nDetected Bottlenecks:")
         print(bottlenecks)
-    else:
-        print("\nNo bottlenecks detected.")
+    
 
     anomalies = detect_anomalies(collected_data)
     if anomalies:
@@ -146,8 +145,7 @@ def main():
         print("\nDisk and Network Optimization Suggestions:")
         for optimization in disk_network_optimizations:
             print(optimization)
-    else:
-        print("\nNo Disk or Network optimizations required.")
+    
 
     memory_predictions = forecast_resources(collected_data, 'Memory_Percent')
 
